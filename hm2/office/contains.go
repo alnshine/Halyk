@@ -1,6 +1,6 @@
 package office
 
-func Con(array []string, word string) bool {
+func Con[T comparable](array []T, word T) bool {
 	for _, j := range array {
 		if j == word {
 			return true
